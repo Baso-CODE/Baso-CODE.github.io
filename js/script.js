@@ -5,14 +5,14 @@
 //     navbarNav.classList.toggle('active');
 // };
 //toggle class acctive untuk search form
-const searchForm = document.querySelector( '.search-form');
-const searchBox = document.querySelector( '#search-box');
+// let searchForm = document.querySelector( '#search-form');
+// let searchBox = document.querySelector( '#search-box');
+// let searchBTN = document.querySelector( '#search-button');
 
 
-
-document.querySelector( "#search-button" ).onclick = () => {
-    searchForm.classList.toggle('active');
-};
+// searchBTN.addEventListener('click', function(){
+//     console.log('Test')
+// });
 
 
 // klick di luar sidebar 

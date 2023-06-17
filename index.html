@@ -39,7 +39,7 @@
 
       <!-- search for start -->
 
-      <div class="search-form">
+      <div class="search-form" id="search-form">
         <input type="search" id="search-box" placeholder="search here..." />
         <label for="search-box"><i data-feather="search"></i></label>
       </div>
@@ -195,6 +195,23 @@
         <p>Created by <a href="">Baso M.Afriza</a>. | &copy; 2023.</p>
       </div>
     </footer>
+
+    <script>
+      let search_button = document.getElementById('search-button')
+      let search_form = document.getElementById('search-form')
+      let is_click = false
+
+      search_button.addEventListener('click', function(){
+        console.log('Test')
+        if (is_click == false) {
+          search_form.classList.add('active');
+          is_click = true
+        } else {
+          search_form.classList.remove('active');
+          is_click = false
+        }
+      })
+    </script>
 
     <!-- foother end  -->
 
